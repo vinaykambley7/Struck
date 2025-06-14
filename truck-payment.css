@@ -104,6 +104,7 @@ input[type="password"] {
   margin: 20px auto;
   display: block;
   width: 100%;
+  color:#28a745;
 }
 
 #successMessage {
