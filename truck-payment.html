@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="truck-payment.css"type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-xl-12"
+            >
+                <div class="backPay">
+            
+        <h2>Choose Payment Method</h2>
+        
+        <form id="paymentForm">
+            <label>
+                <input type="radio" name="paymentMethod" value="upi"> UPI Payment
+            </label>
+            <label>
+                <input type="radio" name="paymentMethod" value="card"> Debit / Credit Card
+            </label>
+            <label>
+                <input type="radio" name="paymentMethod" value="cash"> Cash on Service
+            </label>
+
+            <!-- UPI Payment Section -->
+            <div id="upiSection" class="payment-section">
+                <label for="upiId">Enter UPI ID:</label>
+                <input type="text" id="upiId" placeholder="example@upi">
+            </div>
+
+            <!-- Card Payment Section -->
+            <div id="cardSection" class="payment-section">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+
+                <label for="cardHolder">Cardholder Name:</label>
+                <input type="text" id="cardHolder" placeholder="Full Name">
+
+                <label for="expiry">Expiry Date:</label>
+                <input type="text" id="expiry" placeholder="MM/YY">
+
+                <label for="cvv">CVV:</label>
+                <input type="password" id="cvv" placeholder="***">
+            </div>
+
+            <!-- Cash Payment Section -->
+            <div id="cashSection" class="payment-section">
+                <p>Pay in cash upon truck service completion.</p>
+            </div>
+            <div class="m-3">
+                <button type="submit" class="btnpay">Proceed to Pay</button>
+            </div>
+        </form>
+        <p id="paymentMessage" class="sucessPay"></p>
+        
+        <div id="successMessage">
+            <div class="truck-container">
+                
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+</div>
+</div>
+    <script src="truck-payment.js"></script>
+</body>
+
+</html>

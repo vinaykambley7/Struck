@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="truck-details.css"type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrUZleh8ckhHWJHx6RNExONqKhSgsS7ro"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/dmy7kknrc/image/upload/v1710075894/IMG_1780_qnls7g.jpg" class="logo1"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">your location</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Profile</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-xl-12">
+                
+                <div id="truckDetails" class="background2">
+                    <img id="mainTruckImage" class="image1 " src="https://res.cloudinary.com/dmy7kknrc/image/upload/v1710075894/IMG_1780_qnls7g.jpg">
+                    <div class="d-flex flex-row align-items-start'">
+                        <img  id="truckImage1" class="image m-3" src="https://res.cloudinary.com/dmy7kknrc/image/upload/v1698585672/95366fabfdb7dec2b94277862078ed51_phg2yf.jpg">
+                        <div class="p-3" id="trck-details">
+                            <h1 class="heading" id="truckName"></h1>
+                            <p class="heading" id="truckDescription"></p>
+                            <ul class="unorder" id="truckSpecs">
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                     <form id="bookingForm" class="m-2">
+            <label>📍 Pickup Location:</label>
+            <input type="text" id="pickupLocation" class="m-2" required>
+
+            <label>📍 Drop-off Location:</label>
+            <input type="text" id="dropoffLocation" class="m-2" required>
+
+            <label>📅 Date & Time:</label>
+            <input type="datetime-local" id="bookingDateTime" class="m-2" required> <br>
+
+            <label>🚚 Number of Trucks:</label>
+            <input type="number" id="numTrucks" min="1" value="1" class="m-2" required>
+
+            <label>👤 Your Name:</label>
+            <input type="text" id="customerName" class="m-2" required>
+
+            <label>📞 Contact Number:</label>
+            <input type="tel" id="customerContact" class="m-3" required><br>
+
+            
+            <label>📏 Distance (KM):</label>
+            <input type="text" id="distancekm" class="m-3" readonly>
+            <p id="totalCost">Total Cost: ₹0.00</p>
+
+           <div class="text-center m-3">
+            <button type="button" class="btn btn-primary btn1" id="calculateDistanceBtn">📏 Calculate Distance</button>
+            <button type="submit" class="btn btn-primary btn1" id="proccedbtn">✅ Proceed Booking</button>
+          </div>
+        </form>
+        <a href="truck-4.html"><button class=" serchbutton btn btn-primary m-3">Back</button></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="truck-details.js"></script>
+</body>
+
+</html>

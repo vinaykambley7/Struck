@@ -1,0 +1,142 @@
+/* truck-4.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.background4 {
+  background: linear-gradient(#34495E, #ad2167);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.logo1 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.headingselect {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+/* Truck Grid Layout */
+.truck-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.truck-option {
+  background: rgba(255,255,255,0.1);
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  
+}
+
+.truckimage {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.truck-option p {
+  color: white;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Selected State */
+.truck-option.selected {
+  border-color: #2ecc71;
+  background: rgba(46, 204, 113, 0.1);
+}
+
+.truck-option.selected::after {
+  content: "✔ Selected";
+  display: block;
+  color: #2ecc71;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.serchbutton {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-weight: 600;
+  width: 200px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.serchbutton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .truck-grid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .truckimage {
+    height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .headingselect {
+    font-size: 20px;
+  }
+  
+  .serchbutton {
+    width: 180px;
+  }
+}

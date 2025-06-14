@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.background5 {
+    background-image: url("https://res.cloudinary.com/dmy7kknrc/image/upload/v1699033702/dark-blue-plain-wall-background_53876-92976_ivffmi.avif ");
+    height: 100%;
+    padding: 8px;
+    border-radius: 11px;
+    margin: 8px;
+}
+
+.imagedcm {
+    height: 100px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.h1 {
+    color: white;
+}
+
+.parael {
+    color: white;
+}
+
+.h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.logo1 {
+    height: 80px;
+    border-radius: 45px;
+}
+
+.h3 {
+    color: white;
+    font-size: 25px;
+}
+
+.button3 {
+    text-align: center;
+    background: none;
+}
+
+.location-bg {
+    background-image: linear-gradient(#053463, #125AA2);
+    border-radius: 8px;
+}
+
+.location-h1 {
+    color: white;
+}
+
+textarea {
+    width: 60%;
+    height: 100%;
+}

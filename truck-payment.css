@@ -1,0 +1,136 @@
+/* truck-payment.css - Perfectly Centered Mobile Layout */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Base Mobile Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#34495E, #ad2167);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+  max-width: 500px; /* Optimal width for mobile */
+  margin: 0 auto;
+}
+
+.backPay {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Centered Payment Form */
+#paymentForm {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 0 auto;
+}
+
+/* Centered Heading */
+h2 {
+  text-align: center;
+  color: white;
+  margin: 0 0 25px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+/* Form Elements */
+label {
+  display: block;
+  margin: 15px 0 8px;
+  color: #2c3e50;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 5px 0 15px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Centered Button */
+.btnpay {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  padding: 14px;
+  margin: 25px auto 10px;
+  border: none;
+  border-radius: 8px;
+  background: #28a745;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Centered Messages */
+#paymentMessage.sucessPay {
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+  width: 100%;
+}
+
+#successMessage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Mobile-Specific Adjustments */
+@media (max-width: 480px) {
+  .backPay {
+    padding: 15px;
+  }
+  
+  #paymentForm {
+    padding: 15px;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
+  
+  .btnpay {
+    max-width: 100%;
+  }
+}
