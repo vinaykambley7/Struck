@@ -79,9 +79,9 @@ document.addEventListener("DOMContentLoaded", function() {
                
             }
             
-            messageBox.innerHTML = '🚛 <span class="success-text">!Almost done! Approve the payment in your UPI app</span>';
-            messageBox.classList.add("show");
-            messageBox.appendChild(HomeButton);
+            paymentMessage.textContent = "!Almost done! Approve the payment in your UPI app"
+            paymentMessage.classList.add("show");
+            paymentMessage.appendChild(HomeButton);
           
 
 
@@ -128,9 +128,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 messageBox.classList.add("show");
                 paymentForm.parentNode.appendChild(messageBox);
         }
-        messageBox.innerHTML = '🚛 <span class="success-text">Truck Booked Successfully!</span>';
-        messageBox.classList.add("show")
-        messageBox.appendChild(HomeButton);
+            paymentMessage.textContent = "Truck Booked Successfully!"
+            paymentMessage.classList.add("show");
+            paymentMessage.appendChild(HomeButton);
                 // Hide automatically after 3 seconds
                 setTimeout(() => {
                     messageBox.classList.remove("show");
@@ -148,9 +148,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     document.body.appendChild(messageBox);
                 }
 
-                messageBox.innerHTML = '🚛 <span class="success-text">Truck Booked Successfully!</span>';
-                messageBox.classList.add("show");
-                messageBox.appendChild(HomeButton);
+                paymentMessage.textContent = "Truck Booked Successfully!"
+            paymentMessage.classList.add("show");
+            paymentMessage.appendChild(HomeButton);
                 
             
                 // Hide automatically after 3 seconds
